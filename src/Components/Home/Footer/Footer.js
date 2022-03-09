@@ -7,7 +7,7 @@ const Footer = () => {
             <section id="footer">
                 <div class="container">
                     <div class="row text-xs-center text-sm-left  text-md-left">
-                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        {/* <div class="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
                             <ul class="list-unstyled quick-links">
                                 <li>
@@ -96,7 +96,7 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
@@ -135,6 +135,14 @@ const Footer = () => {
                             <p>
                                 MAWLANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY <br /> Santosh, Tangail - 1902.
                             </p>
+                            <br />
+                            <h4>Contact:</h4>
+                            <p>
+                                Phone: +880921 55399 <br />
+                                Fax: +880921 55400 <br />
+                                E-Mail: registrar@mbstu.ac.bd
+                            </p>
+                            <br />
                             <p class="h6">
                                 © All Right Reversed. {new Date().getFullYear()} <br />
                                 <a class="text-green ml-2" href="/">

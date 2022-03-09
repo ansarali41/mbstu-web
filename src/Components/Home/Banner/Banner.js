@@ -62,9 +62,9 @@ const Banner = () => {
                     </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
-            <div {...defns.mujibBorhsoImgContainer}>
+            {/* <div {...defns.mujibBorhsoImgContainer}>
                 <img className="img-fluid" src="https://i.ibb.co/QHMFCFq/mujib100-banner-970.jpg" alt="mujib100-banner-970" border="0" />
-            </div>
+            </div> */}
         </div>
     );
 };

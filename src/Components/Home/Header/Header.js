@@ -9,6 +9,7 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../../Helper/definitionHelper';
+import { Link } from 'react-router-dom';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -18,6 +19,7 @@ const useStyles = (params = {}) => {
         logoText: { fontWeight: 'bold' },
         marqueeContainer: { display: 'flex', alignItems: 'center', background: 'black' },
         navbarContainer: { padding: '0px 20px', background: '#0a1c2e !important' },
+        link: { textDecoration: 'none', color: 'inherit' },
     }));
 };
 
@@ -46,32 +48,64 @@ const Header = () => {
             <div {...defns.marqueeContainer}>
                 {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
                 <marquee width="90%" direction="left" style={{ background: '#E6E7E8' }}>
-                    করোনা ঝুঁকি যাচাই করতে ৩৩৩ বা *৩৩৩২# ডায়াল করুন। ভিজিট করুন corona.gov.bd অথবা ডাউনলোড করুন CoronaBD অ্যাপ। ৩৩৩ নম্বরে অপ্রয়োজনে কল করা থেকে বিরত থাকুন।
+                    মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের নব-নিযুক্ত মাননীয় ভাইস-চ্যান্সেলর অধ্যাপক ড. মোঃ ফরহাদ হোসেন কে শুভেচ্ছা ও অভিনন্দন।
                 </marquee>
                 <span className="text-warning px-4">Highlight</span>
             </div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" {...defns.navbarContainer}>
-                <Navbar.Brand href="#home">
-                    <img className="w-25" src="https://i.ibb.co/s5XmR5J/mbstu-logo.png" alt="" /> <span {...defns.logoText}>MBSTU</span>
+                <Navbar.Brand>
+                    <Link to="/" {...defns.link}>
+                        <img className="w-25" src="https://i.ibb.co/s5XmR5J/mbstu-logo.png" alt="" />
+                    </Link>
+
+                    <Link to="/" {...defns.link}>
+                        <span {...defns.logoText}>MBSTU</span>
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#History">History</Nav.Link>
-                        <Nav.Link href="#History">Notice</Nav.Link>
-                        <NavDropdown title="Departments" id="collasible-nav-dropdown">
+                        <Nav.Link>
+                            <Link to="/home" {...defns.link}>
+                                Home
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/history" {...defns.link}>
+                                History
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/administration" {...defns.link}>
+                                Administration
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/notice" {...defns.link}>
+                                Notice
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/campus-life" {...defns.link}>
+                                Campus Life
+                            </Link>
+                        </Nav.Link>
+                        {/* <NavDropdown title="Departments" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">CSE</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">ICT</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Textile Engineering</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">About</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Admission</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            ICT Cell
+                        <Nav.Link href="https://mbstu.ac.bd/admissionresult.html" target="_blank">
+                            Admission
+                        </Nav.Link>
+                        <Nav.Link eventKey={2}>
+                            <Link to="/ict-cell" {...defns.link}>
+                                ICT Cell
+                            </Link>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
