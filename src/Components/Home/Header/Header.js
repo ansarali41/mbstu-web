@@ -2,7 +2,7 @@ import React from 'react';
 // import Button from '@mui/material/Button';
 import { makeStyles } from '@material-ui/core';
 
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 // import './styles.css';
 //---------------------------------------------------------------------
@@ -88,6 +88,16 @@ const Header = () => {
                         <Nav.Link>
                             <Link to="/campus-life" {...defns.link}>
                                 Campus Life
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/faculties" {...defns.link}>
+                                Faculties
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/library" {...defns.link}>
+                                Library
                             </Link>
                         </Nav.Link>
                         {/* <NavDropdown title="Departments" id="collasible-nav-dropdown">
