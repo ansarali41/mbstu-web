@@ -5,133 +5,133 @@ const Footer = () => {
     return (
         <div>
             <section id="footer">
-                <div class="container">
-                    <div class="row text-xs-center text-sm-left  text-md-left">
-                        {/* <div class="col-xs-12 col-sm-4 col-md-4">
+                <div className="container">
+                    <div className="row text-xs-center text-sm-left  text-md-left">
+                        {/* <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
-                            <ul class="list-unstyled quick-links">
+                            <ul className="list-unstyled quick-links">
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Home
+                                        <i className="fa fa-angle-double-right"></i>Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>About
+                                        <i className="fa fa-angle-double-right"></i>About
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>FAQ
+                                        <i className="fa fa-angle-double-right"></i>FAQ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Get Started
+                                        <i className="fa fa-angle-double-right"></i>Get Started
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Videos
+                                        <i className="fa fa-angle-double-right"></i>Videos
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
-                            <ul class="list-unstyled quick-links">
+                            <ul className="list-unstyled quick-links">
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Home
+                                        <i className="fa fa-angle-double-right"></i>Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>About
+                                        <i className="fa fa-angle-double-right"></i>About
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>FAQ
+                                        <i className="fa fa-angle-double-right"></i>FAQ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Get Started
+                                        <i className="fa fa-angle-double-right"></i>Get Started
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Videos
+                                        <i className="fa fa-angle-double-right"></i>Videos
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
-                            <ul class="list-unstyled quick-links">
+                            <ul className="list-unstyled quick-links">
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Home
+                                        <i className="fa fa-angle-double-right"></i>Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>About
+                                        <i className="fa fa-angle-double-right"></i>About
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>FAQ
+                                        <i className="fa fa-angle-double-right"></i>FAQ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/">
-                                        <i class="fa fa-angle-double-right"></i>Get Started
+                                        <i className="fa fa-angle-double-right"></i>Get Started
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://wwwe.sunlimetech.com" title="Design and developed by">
-                                        <i class="fa fa-angle-double-right"></i>Imprint
+                                        <i className="fa fa-angle-double-right"></i>Imprint
                                     </a>
                                 </li>
                             </ul>
                         </div> */}
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                            <ul class="list-unstyled list-inline social text-center">
-                                <li class="list-inline-item">
-                                    <a href="/">
-                                        <i class="fa fa-facebook"></i>
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                            <ul className="list-unstyled list-inline social text-center">
+                                <li className="list-inline-item">
+                                    <a href="https://www.facebook.com/mbstu2011" target="_blank" rel="noreferrer">
+                                        <i className="fa fa-facebook"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="/">
-                                        <i class="fa fa-twitter"></i>
+                                <li className="list-inline-item">
+                                    <a href="/" target="_blank" rel="noreferrer">
+                                        <i className="fa fa-twitter"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="/">
-                                        <i class="fa fa-instagram"></i>
+                                <li className="list-inline-item">
+                                    <a href="/" target="_blank" rel="noreferrer">
+                                        <i className="fa fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="/">
-                                        <i class="fa fa-google-plus"></i>
+                                <li className="list-inline-item">
+                                    <a href="/" target="_blank" rel="noreferrer">
+                                        <i className="fa fa-google-plus"></i>
                                     </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="/">
-                                        <i class="fa fa-envelope"></i>
+                                <li className="list-inline-item">
+                                    <a href="/" target="_blank" rel="noreferrer">
+                                        <i className="fa fa-envelope"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <hr />
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white footer-bottom">
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white footer-bottom">
                             <p>
                                 MAWLANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY <br /> Santosh, Tangail - 1902.
                             </p>
@@ -143,9 +143,9 @@ const Footer = () => {
                                 E-Mail: registrar@mbstu.ac.bd
                             </p>
                             <br />
-                            <p class="h6">
+                            <p className="h6">
                                 © All Right Reversed. {new Date().getFullYear()} <br />
-                                <a class="text-green ml-2" href="/">
+                                <a className="text-green ml-2" href="/">
                                     MBSTU
                                 </a>
                             </p>

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Divider, makeStyles } from '@material-ui/core';
 
 // import './styles.css';
@@ -44,6 +44,9 @@ const getDefns = params => {
 const Faculties = () => {
     const classes = useStyles({})();
     const defns = getDefns({ classes });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div {...defns.root} style={{ padding: '30px 100px' }}>
             <h2 {...defns.headingSecondary}>Faculties</h2>

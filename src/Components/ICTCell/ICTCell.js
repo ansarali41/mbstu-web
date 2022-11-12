@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Divider, Grid, makeStyles } from '@material-ui/core';
 
 // import './styles.css';
@@ -43,8 +43,11 @@ const getDefns = params => {
 const ICTCell = () => {
     const classes = useStyles({})();
     const defns = getDefns({ classes });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
-        <div {...defns.root} style={{ padding: '30px 0px' }}>
+        <div {...defns.root} style={{ paddingTop: '150px' }}>
             <Grid {...defns.mainContainer}>
                 <Grid {...defns.gridItem}>
                     <div>

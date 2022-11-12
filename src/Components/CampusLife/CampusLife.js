@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Divider, Grid, makeStyles } from '@material-ui/core';
 
 // import './styles.css';
@@ -43,6 +43,9 @@ const getDefns = params => {
 const CampusLife = () => {
     const classes = useStyles({})();
     const defns = getDefns({ classes });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div {...defns.root} style={{ padding: '30px 0px' }}>
             <Grid {...defns.mainContainer}>

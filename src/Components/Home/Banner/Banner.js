@@ -1,19 +1,26 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
 // import Button from '@mui/material/Button';
 import { makeStyles } from '@material-ui/core';
+import sotoBorso from '../../../Images/sotoborso.png';
+import banner1 from '../../../Images/homeBanner/banner1.jpeg';
+import banner2 from '../../../Images/homeBanner/banner2.jpeg';
+import banner3 from '../../../Images/homeBanner/banner3.jpeg';
 
 // import './styles.css';
 //---------------------------------------------------------------------
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../../Helper/definitionHelper';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
 const useStyles = (params = {}) => {
     return makeStyles(theme => ({
         root: { paddingTop: 100 },
+        sotoBorsoImg: { position: 'absolute', right: 0, top: 130, background: 'white' },
         mujibBorhsoImgContainer: { display: 'flex', justifyContent: 'center', padding: '25px 0px' },
     }));
 };
@@ -31,7 +38,6 @@ const getDefns = params => {
 
     // Automatically inject className for matching keys
     setClassNameInDefns(defns, classes);
-
     return defns;
 };
 
@@ -40,31 +46,23 @@ const Banner = () => {
     const defns = getDefns({ classes });
     return (
         <div {...defns.root}>
-            <Carousel fade>
-                <Carousel.Item>
-                    <img style={{ height: 400 }} className="d-block w-100" src="https://mbstu.ac.bd/images/main_gate.jpg" alt="First slide" />
-                    {/* <Carousel.Caption>
-                        <h3>First Gate</h3>
-                    </Carousel.Caption> */}
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img style={{ height: 400 }} className="d-block w-100" src="https://i.ibb.co/QNfwM5w/b.jpg" alt="Second slide" />
-
-                    {/* <Carousel.Caption>
-                        <h3>New Building</h3>
-                    </Carousel.Caption> */}
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img style={{ height: 400 }} className="d-block w-100" src="https://i.ibb.co/XpPp7vB/c.jpg" alt="Third slide" />
-
-                    {/* <Carousel.Caption>
-                        <h3>New Building</h3>
-                    </Carousel.Caption> */}
-                </Carousel.Item>
+            <Carousel>
+                <div>
+                    <img src={banner1} alt="img" />
+                    {/* <p className="legend">Legend 1</p> */}
+                </div>
+                <div>
+                    <img src={banner2} alt="img" />
+                    {/* <p className="legend">Legend 2</p> */}
+                </div>
+                <div>
+                    <img src={banner3} alt="img" />
+                    {/* <p className="legend">Legend 3</p> */}
+                </div>
             </Carousel>
-            {/* <div {...defns.mujibBorhsoImgContainer}>
-                <img className="img-fluid" src="https://i.ibb.co/QHMFCFq/mujib100-banner-970.jpg" alt="mujib100-banner-970" border="0" />
-            </div> */}
+            <div {...defns.sotoBorsoImg}>
+                <img src={sotoBorso} alt="" className="img-fluid" />
+            </div>
         </div>
     );
 };

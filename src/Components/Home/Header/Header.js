@@ -1,7 +1,6 @@
 import React from 'react';
 // import Button from '@mui/material/Button';
 import { makeStyles } from '@material-ui/core';
-
 import { Nav, Navbar } from 'react-bootstrap';
 
 // import './styles.css';
@@ -16,10 +15,24 @@ import { Link } from 'react-router-dom';
 const useStyles = (params = {}) => {
     return makeStyles(theme => ({
         root: { position: 'fixed', zIndex: 5, width: '100%' },
-        logoText: { fontWeight: 'bold' },
         marqueeContainer: { display: 'flex', alignItems: 'center', background: 'black' },
         navbarContainer: { padding: '0px 20px', background: '#0a1c2e !important' },
         link: { textDecoration: 'none', color: 'inherit' },
+        mbstuLogo: {
+            width: '70px',
+            padding: '5px',
+        },
+        universityName: {
+            fontSize: '12px',
+            marginBottom: -5,
+            marginLeft: 10,
+            marginRight: 30,
+            fontWeight: 'bold',
+        },
+        navbarBrand: {
+            display: 'flex',
+            alignItems: 'center',
+        },
     }));
 };
 
@@ -53,14 +66,16 @@ const Header = () => {
                 <span className="text-warning px-4">Highlight</span>
             </div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" {...defns.navbarContainer}>
-                <Navbar.Brand>
+                <Navbar.Brand {...defns.navbarBrand}>
                     <Link to="/" {...defns.link}>
-                        <img className="w-25" src="https://i.ibb.co/s5XmR5J/mbstu-logo.png" alt="" />
+                        <img className="img-fluid" {...defns.mbstuLogo} src="https://i.ibb.co/s5XmR5J/mbstu-logo.png" alt="" />
                     </Link>
 
-                    <Link to="/" {...defns.link}>
-                        <span {...defns.logoText}>MBSTU</span>
-                    </Link>
+                    <div>
+                        <p {...defns.universityName}>
+                            MAWLANA BHASHANI SCIENCE <br /> AND TECHNOLOGY UNIVERSITY
+                        </p>
+                    </div>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 
 // import './styles.css';
@@ -42,6 +42,9 @@ const getDefns = params => {
 const History = () => {
     const classes = useStyles({})();
     const defns = getDefns({ classes });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <Grid {...defns.historyContainer} style={{ padding: '30px 0px' }}>
