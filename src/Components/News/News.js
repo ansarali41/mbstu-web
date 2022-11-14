@@ -10,8 +10,7 @@ import { Card } from 'react-bootstrap';
 import noticeData from '../fakeData/noticeData';
 import { useLocation } from 'react-router-dom';
 import { Button } from '@mui/material';
-import banner from '../../Images/Notice-banner-E.png';
-
+import banner from '../../Images/Latest-News-Banner-01.png';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -39,7 +38,7 @@ const getDefns = params => {
     return defns;
 };
 
-const Notice = () => {
+const News = () => {
     // local state
     const [notices, setNotices] = useState([]);
     const url = useLocation();
@@ -64,13 +63,13 @@ const Notice = () => {
                     </div>
                 )}
 
-                <h3 {...defns.heading}>LATEST NOTICES</h3>
+                <h3 {...defns.heading}>LATEST NEWS</h3>
                 <Grid {...defns.noticeContainer}>
                     {notices.slice(0, noticeShowLength).map(notice => (
                         <Grid key={notice.id} {...defns.noticeCard}>
                             {/* <Link to={`/notice/${notice.id}`}> */}
-                            <Card className="m-3">
-                                <Card.Img variant="top" src={notice.image} />
+                            <Card className="m-3 border border-primary">
+                                <Card.Img variant="top" src="http://zamanmuzib.weebly.com/uploads/2/6/8/9/26898612/header_images/1418327668.jpg" />
                                 <Card.Body>
                                     <Card.Title>{notice.Title}</Card.Title>
                                     <Card.Text>{notice.noticeDetails}</Card.Text>
@@ -93,4 +92,4 @@ const Notice = () => {
     );
 };
 
-export default Notice;
+export default News;

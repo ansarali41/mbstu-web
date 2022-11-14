@@ -8,6 +8,8 @@ import { makeStyles } from '@material-ui/core';
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
 import { Divider, Grid } from '@mui/material';
 import centralLibrary from '../../Images/Library/mbstu-cafetaria-central-library.jpeg';
+import MbstuBanner from '../../Helper/CommonComponents/MbstuBanner';
+import libraryBanner from '../../Images/library-banner.jpeg';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -18,6 +20,7 @@ const useStyles = (params = {}) => {
         headingSecondary: { color: '#999943' },
         link: { textDecoration: 'none', color: 'inherit' },
         historyItemRight: { display: 'flex', alignItems: 'center', justifyContent: 'center' },
+        historyContainer: { padding: '20px 0px' },
     }));
 };
 
@@ -47,7 +50,8 @@ const Library = () => {
     }, []);
     return (
         <div>
-            <Grid {...defns.historyContainer} style={{ padding: '30px 0px' }}>
+            <MbstuBanner img_path={libraryBanner} />
+            <Grid {...defns.historyContainer}>
                 <Grid {...defns.historyItemLeft}>
                     <h2 {...defns.headingSecondary}>Library</h2>
                     <Divider />

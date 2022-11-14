@@ -1,8 +1,4 @@
-import { Button, Grid } from '@material-ui/core';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Notice from '../Notice/Notice';
-import About from './About/About';
 import { makeStyles } from '@material-ui/core';
 
 // import './styles.css';
@@ -10,9 +6,8 @@ import { makeStyles } from '@material-ui/core';
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
-import Banner from './Banner/Banner';
-import News from '../News/News';
-// import Message from './Message/Message';
+import { useParams } from 'react-router-dom';
+import noticeData from '../fakeData/noticeData';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -24,7 +19,7 @@ const useStyles = (params = {}) => {
         administrationDiv: {
             padding: '15px 0px',
         },
-        link: { textDecoration: 'none', color: 'inherit', marginRight: 15 },
+        link: { textDecoration: 'none', color: 'inherit' },
     }));
 };
 
@@ -35,7 +30,7 @@ const getDefns = params => {
     const { classes } = params;
 
     const defns = {
-        noticeContainer: { container: true, justifyContent: 'flex-end' },
+        administrationContainer: { container: true, justifyContent: 'center' },
         administrationItem: { item: 'true', xl: 11, lg: 11, md: 11, sm: 11, xm: 11 },
         // administrationItemLeft: { item: true, xl: 8, lg: 8, md: 7, sm: 7, xs: 11 },
         // administrationItemRight: { item: true, xl: 3, lg: 3, md: 3, sm: 3, xs: 11 },
@@ -47,42 +42,19 @@ const getDefns = params => {
     return defns;
 };
 
-const Home = () => {
+const NoticeDetails = () => {
+    // local hooks
+    const { noticeId } = useParams();
+    const notice = noticeData.filter(item => item.id === parseInt(noticeId));
+    const { fullDetails, title } = notice[0];
     const classes = useStyles({})();
     const defns = getDefns({ classes });
     return (
-        <div>
-            <Banner />
-            {/* <Message /> */}
-            <About />
-            {/* notice */}
-            <div className="py-5">
-                <Notice />
-                <Grid {...defns.noticeContainer}>
-                    <Grid item>
-                        <Link to="/notice" {...defns.link}>
-                            <Button variant="contained" color="primary">
-                                See More
-                            </Button>
-                        </Link>
-                    </Grid>
-                </Grid>
-            </div>
-
-            <div className="py-5">
-                <News />
-                <Grid {...defns.noticeContainer}>
-                    <Grid item>
-                        <Link to="/news" {...defns.link}>
-                            <Button variant="contained" color="primary">
-                                See More
-                            </Button>
-                        </Link>
-                    </Grid>
-                </Grid>
-            </div>
+        <div {...defns.root} style={{ padding: '30px 100px' }}>
+            <h4>{title}</h4>
+            <p>{fullDetails}</p>
         </div>
     );
 };
 
-export default Home;
+export default NoticeDetails;

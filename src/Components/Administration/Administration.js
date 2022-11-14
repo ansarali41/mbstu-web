@@ -6,6 +6,8 @@ import { Grid, makeStyles } from '@material-ui/core';
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
+import MbstuBanner from '../../Helper/CommonComponents/MbstuBanner';
+import administratorBanner from '../../Images/admisitrator-banner.jpeg';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -46,7 +48,8 @@ const Administration = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div {...defns.root} style={{ padding: '30px 0px' }}>
+        <div>
+            <MbstuBanner img_path={administratorBanner} />
             <Grid {...defns.administrationContainer}>
                 <Grid {...defns.administrationItem}>
                     <div {...defns.administrationDiv}>

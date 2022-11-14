@@ -9,6 +9,8 @@ import { setClassNameInDefns } from '../../Helper/definitionHelper';
 import { Grid } from '@mui/material';
 import Bhashani from '../../Images/History/bhashani.jpeg';
 import lateVc from '../../Images/History/late_vc_sir.jpeg';
+import MbstuBanner from '../../Helper/CommonComponents/MbstuBanner';
+import historyBanner from '../../Images/history-banner.jpeg';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -47,7 +49,8 @@ const History = () => {
     }, []);
     return (
         <div>
-            <Grid {...defns.historyContainer} style={{ padding: '30px 0px' }}>
+            <MbstuBanner img_path={historyBanner} />
+            <Grid {...defns.historyContainer} style={{ padding: '40px 0px' }}>
                 {/* <Grid {...defns.welcomeItem}>
                     <h4>Welcome</h4>
                     <p>

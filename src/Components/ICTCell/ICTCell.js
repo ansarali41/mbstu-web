@@ -6,6 +6,8 @@ import { Divider, Grid, makeStyles } from '@material-ui/core';
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
+import MbstuBanner from '../../Helper/CommonComponents/MbstuBanner';
+import ictCellBanner from '../../Images/ict-cell-banner.png';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -47,13 +49,62 @@ const ICTCell = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div {...defns.root} style={{ paddingTop: '150px' }}>
+        <div>
+            <MbstuBanner img_path={ictCellBanner} />
             <Grid {...defns.mainContainer}>
                 <Grid {...defns.gridItem}>
                     <div>
                         <h2 {...defns.heading}>ICT Cell Office</h2>
                         <Divider />
                         <p {...defns.paragraph}></p>
+                    </div>
+                    <div className="row d-flex align-items-center justify-content-around">
+                        <div className="col-md-5">
+                            <img src="https://mbstu.ac.bd/assets/images/Professor%20Monir%20Morshed.png" alt="" className="img-fluid w-50" />
+                        </div>
+                        <div className="col-md-7">
+                            <h3>Director</h3>
+                            <h4>Professor Dr. Monir Morshed</h4>
+                        </div>
+                    </div>
+                    {/* table */}
+                    <div className="mt-5">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Designation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Amzad Hossain</td>
+                                    <td>Assistant Database Programmer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Md. Atiqul Haque</td>
+                                    <td>Assistant Computer Programmer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Dilara Shabnam</td>
+                                    <td>Section Officer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Md. Ariful Islam</td>
+                                    <td>Section Officer (Data Entry)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Md. Khairul Islam</td>
+                                    <td>Administrative Officer (Hardware)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </Grid>
             </Grid>

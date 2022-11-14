@@ -6,13 +6,15 @@ import { Divider, Grid, makeStyles } from '@material-ui/core';
 // Common helpers and constants imports
 //---------------------------------------------------------------------
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
+import MbstuBanner from '../../Helper/CommonComponents/MbstuBanner';
+import campusBanner from '../../Images/campus-life-banner.jpeg';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
 const useStyles = (params = {}) => {
     return makeStyles(theme => ({
         // root: { paddingTop: '120' },
-        heading: { color: '#85A64E' },
+        heading: { color: '#85A64E', paddingTop: 20 },
         headingSecondary: { color: '#999943' },
         administrationDiv: {
             padding: '15px 0px',
@@ -47,7 +49,8 @@ const CampusLife = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div {...defns.root} style={{ padding: '30px 0px' }}>
+        <div>
+            <MbstuBanner img_path={campusBanner} />
             <Grid {...defns.mainContainer}>
                 <Grid {...defns.gridItem}>
                     <div>

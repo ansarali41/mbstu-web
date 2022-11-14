@@ -115,6 +115,11 @@ const Header = () => {
                                 Library
                             </Link>
                         </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/news" {...defns.link}>
+                                News
+                            </Link>
+                        </Nav.Link>
                         {/* <NavDropdown title="Departments" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">CSE</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">ICT</NavDropdown.Item>

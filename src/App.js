@@ -11,6 +11,7 @@ import ICTCell from './Components/ICTCell/ICTCell';
 import Faculties from './Components/Faculties/Faculties';
 import Library from './Components/Library/Library';
 import NoticeDetails from './Components/Notice/NoticeDetails';
+import News from './Components/News/News';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/history" element={<History />} />
                 <Route path="/notice" element={<Notice />} />
+                <Route path="/news" element={<News />} />
                 <Route path="/notice/:noticeId" element={<NoticeDetails />} />
                 <Route path="/administration" element={<Administration />} />
                 <Route path="/campus-life" element={<CampusLife />} />
