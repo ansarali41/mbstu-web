@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className="aboutus-area">
             <Container>
-                <Row>
+                <Row className="d-flex align-items-center">
                     <Col sm={12} xs={12} md={4} lg={4} xl={4}>
                         <div className="aboutus-image float-left hidden-sm">
                             <img src="https://mbstu.ac.bd/2ndConvocation/Academic-1.jpg" alt="" />

@@ -68,9 +68,9 @@ const ICTCell = () => {
                         </div>
                     </div>
                     {/* table */}
-                    <div className="mt-5">
+                    <div className="my-5">
                         <table class="table table-striped">
-                            <thead>
+                            <thead className="bg-secondary text-white">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
@@ -102,6 +102,43 @@ const ICTCell = () => {
                                     <th scope="row">5</th>
                                     <td>Md. Khairul Islam</td>
                                     <td>Administrative Officer (Hardware)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="my-5 pt-5">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2" className="text-center bg-info">
+                                        Contact
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Phone (Office)</th>
+                                    <td>+88092162515</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IP-Phone (Director)</th>
+                                    <td>2127-124</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IP-Phone (Programmer)</th>
+                                    <td>2127-122</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IP-Phone (Complain)</th>
+                                    <td>2127-121</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IP-Phone (Enquiry)</th>
+                                    <td>2127-123</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td>ictcell@mbstu.ac.bd</td>
                                 </tr>
                             </tbody>
                         </table>

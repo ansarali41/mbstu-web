@@ -74,11 +74,11 @@ const Notice = () => {
                                 <Card.Body>
                                     <Card.Title>{notice.Title}</Card.Title>
                                     <Card.Text>{notice.noticeDetails}</Card.Text>
-                                    <Button variant="outlined" color="primary">
-                                        <a href={notice.fullDetails} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                    <a href={notice.fullDetails} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                        <Button variant="outlined" color="primary">
                                             See More
-                                        </a>
-                                    </Button>
+                                        </Button>
+                                    </a>
                                 </Card.Body>
                                 <Card.Footer>
                                     <small className="text-muted">Last updated {notice.date} mins ago</small>

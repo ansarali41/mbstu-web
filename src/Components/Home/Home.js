@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core';
 import { setClassNameInDefns } from '../../Helper/definitionHelper';
 import Banner from './Banner/Banner';
 import News from '../News/News';
-// import Message from './Message/Message';
+import Message from './Message/Message';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
@@ -53,7 +53,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            {/* <Message /> */}
+            <Message />
             <About />
             {/* notice */}
             <div className="py-5">
