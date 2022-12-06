@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {Button} from '@mui/material';
 import axios from "axios";
 import {UserContext} from "../../../../App";
@@ -7,6 +7,7 @@ import {UserContext} from "../../../../App";
 const Login = () => {
     const [loginData, setLoginData] = useState({});
     const [user, setUser] = useContext(UserContext)
+    const navigate = useNavigate();
 
     const handleChange = e => {
         const field = e.target.name;
@@ -23,8 +24,12 @@ const Login = () => {
             .then(response => {
                 const token = response?.data?.access_token;
                 if (token) {
-                    localStorage.setItem('mbstu-login', token);
+                    // localStorage.setItem('mbstu-login', token);
                     console.log('token set')
+                    navigate('/admin/add-news')
+                    setUser(true)
+                } else {
+                    alert('login failed')
                 }
             });
 
@@ -52,11 +57,11 @@ const Login = () => {
                     <input name="password" className="form-control" onChange={handleChange} id="standard-basic"
                            type="password"/>
                     <br/>
-                    <Link to="/admin/add-news">
-                        <button className="form-control btn btn-success" type="submit" variant="contained">
-                            LOGIN
-                        </button>
-                    </Link>
+
+                    <button className="form-control btn btn-success" type="submit" variant="contained">
+                        LOGIN
+                    </button>
+
 
                     <div className='text-center'>
                         <Link to="/admin/register">

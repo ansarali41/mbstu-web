@@ -123,7 +123,7 @@ const Header = () => {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/admin/login" {...defns.link}>
+                            <Link to="/admin/add-news" {...defns.link}>
                                 Dashboard
                             </Link>
                         </Nav.Link>

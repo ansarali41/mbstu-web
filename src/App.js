@@ -23,17 +23,9 @@ export const UserContext = createContext();
 
 function App() {
 
-    const [user, setUser] = useState({
-        name: '',
-        email: '',
-    })
-    const [isSignedIn, setIsSignedIn] = useState(true)
-    const signin = () => {
-        setIsSignedIn(true)
-    }
-    const signout = () => {
-        setIsSignedIn(false)
-    }
+    const [user, setUser] = useState(false)
+    // const [isSignedIn, setIsSignedIn] = useState(false)
+
     return (
         <UserContext.Provider value={[user, setUser]}>
             <Router>
@@ -50,27 +42,27 @@ function App() {
                     <Route path="/ict-cell" element={<ICTCell/>}/>
                     <Route path="/faculties" element={<Faculties/>}/>
                     <Route path="/library" element={<Library/>}/>
-                    <Route path="/admin/add-news" element={<AdminDashboardNews/>}/>
-                    <Route path="/admin/add-notice" element={<AdminAddNotice/>}/>
+                    {/*<Route path="/admin/add-news" element={<AdminDashboardNews/>}/>*/}
+                    {/*<Route path="/admin/add-notice" element={<AdminAddNotice/>}/>*/}
                     <Route path="/admin/login" element={<Login/>}/>
                     <Route path="/admin/register" element={<Register/>}/>
 
-                    {/*<Route*/}
-                    {/*    path="/admin/add-news"*/}
-                    {/*    element={*/}
-                    {/*        <PrivateRoute isSignedIn={isSignedIn}>*/}
-                    {/*            <AdminDashboardNews/>*/}
-                    {/*        </PrivateRoute>*/}
-                    {/*    }*/}
-                    {/*/>*/}
-                    {/*<Route*/}
-                    {/*    path="/admin/add-notice"*/}
-                    {/*    element={*/}
-                    {/*        <PrivateRoute isSignedIn={isSignedIn}>*/}
-                    {/*            <AdminAddNotice/>*/}
-                    {/*        </PrivateRoute>*/}
-                    {/*    }*/}
-                    {/*/>*/}
+                    <Route
+                        path="/admin/add-news"
+                        element={
+                            <PrivateRoute>
+                                <AdminDashboardNews/>
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/admin/add-notice"
+                        element={
+                            <PrivateRoute>
+                                <AdminAddNotice/>
+                            </PrivateRoute>
+                        }
+                    />
                 </Routes>
                 <Footer/>
             </Router>

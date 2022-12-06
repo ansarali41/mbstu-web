@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f812fe-c95d-431e-9993-914e1adae5a3" name="Changes" comment="before changes defence">
+    <list default="true" id="97f812fe-c95d-431e-9993-914e1adae5a3" name="Changes" comment="access token set local storage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/News/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/News/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Notice/Notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Notice/Notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Home/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PrivateRoute/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/fakeData/noticeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/fakeData/noticeData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,23 @@
       <recent name="$PROJECT_DIR$/src/Components/Dashboard" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670307371004</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="access token set local storage">
+      <created>1670316884507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670316884507</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +114,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="before changes defence" />
-    <option name="LAST_COMMIT_MESSAGE" value="before changes defence" />
+    <MESSAGE value="access token set local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="access token set local storage" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Components/Home/Header/Header.js</url>
+          <line>92</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
