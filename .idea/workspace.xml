@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f812fe-c95d-431e-9993-914e1adae5a3" name="Changes" comment="">
+    <list default="true" id="97f812fe-c95d-431e-9993-914e1adae5a3" name="Changes" comment="before changes defence">
       <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminDashboardNews/AdminDashboardNews.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" afterDir="false" />
@@ -71,8 +71,16 @@
       <option name="presentableId" value="Default" />
       <updated>1668189256928</updated>
       <workItem from="1668189260714" duration="20000" />
-      <workItem from="1670306487831" duration="758000" />
+      <workItem from="1670306487831" duration="1073000" />
     </task>
+    <task id="LOCAL-00001" summary="before changes defence">
+      <created>1670307371004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670307371004</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +96,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="before changes defence" />
+    <option name="LAST_COMMIT_MESSAGE" value="before changes defence" />
   </component>
 </project>
