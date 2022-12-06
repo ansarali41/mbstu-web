@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f812fe-c95d-431e-9993-914e1adae5a3" name="Changes" comment="before changes defence">
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminDashboardNews/AdminDashboardNews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/Sidebar/Sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/AddNotice/AddNotice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PrivateRoute/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Admin/AddNotice/AddNotice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AddNew/AddNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Admin/AdminNotice/AdminAddNotice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Login/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/News/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/News/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Notice/Notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Notice/Notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PrivateRoute/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/fakeData/noticeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/fakeData/noticeData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

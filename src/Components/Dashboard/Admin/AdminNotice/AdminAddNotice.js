@@ -2,15 +2,22 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 import Sidebar from '../Sidebar/Sidebar';
 import axios from "axios";
+import {useNavigate} from 'react-router-dom';
 
 export default function AdminAddNotice() {
     const {register, handleSubmit, reset} = useForm();
+    let navigate = useNavigate();
 
     const onSubmit = async (data) => {
-        // console.log(JSON.stringify(data));
         await axios.post('http://localhost:4000/notice/add', data)
-            .then(response => console.log(response));
-        reset();
+            .then(response => {
+                if (response?.statusText === 'OK') {
+                    reset();
+                    navigate('/notice');
+                }
+            });
+
+
     };
 
     const dashboardStyle = {

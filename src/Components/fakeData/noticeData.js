@@ -20,7 +20,7 @@ const noticeData = [
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
         fullDetails: noticePdf,
         authorName: 'Maxime',
-        image: nImg2,
+        image: "https://i.ibb.co/whVmDRZ/n-img-2.png",
         date: new Date().toLocaleDateString(),
     },
     {
@@ -30,7 +30,7 @@ const noticeData = [
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
         fullDetails: noticePdf,
         authorName: 'Maxime',
-        image: nImg3,
+        image: 'https://i.ibb.co/JvbQFnM/n-img-3.png',
         date: new Date().toLocaleDateString(),
     },
     {

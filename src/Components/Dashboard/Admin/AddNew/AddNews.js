@@ -1,14 +1,20 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 export default function AddNews() {
     const {register, handleSubmit, reset} = useForm();
+    let navigate = useNavigate();
 
     const onSubmit = async (data) => {
         await axios.post('http://localhost:4000/news/add', data)
-            .then(response => console.log(response));
-        reset();
+            .then(response => {
+                if (response?.statusText === 'OK') {
+                    reset();
+                    navigate('/news');
+                }
+            });
     };
     return (
         <div className="row d-flex justify-content-center">

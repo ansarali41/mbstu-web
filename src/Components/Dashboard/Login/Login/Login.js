@@ -18,11 +18,16 @@ const Login = () => {
 
     const handleLogInSubmit = async (e) => {
         e.preventDefault();
-        console.log(loginData);
-        // await axios.post('http://localhost:6000/user/login', loginData)
-        //     .then(response => alert(response?.data));
-        if (!loginData) {
-        }
+
+        await axios.post('http://localhost:4000/user/login', loginData)
+            .then(response => {
+                const token = response?.data?.access_token;
+                if (token) {
+                    localStorage.setItem('mbstu-login', token);
+                    console.log('token set')
+                }
+            });
+
     };
 
     return (
