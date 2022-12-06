@@ -1,11 +1,11 @@
 import noticePdf from '../fakeData/PDF/notice.pdf';
 import nImg2 from '../../Images/n-img-2.jpeg';
 import nImg3 from '../../Images/n-img-3.jpeg';
+
 const noticeData = [
     {
         id: 1,
         title: 'Lorem ipsum dolor sit amet',
-        file_type: 'pdf',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
         fullDetails: noticePdf,
@@ -16,7 +16,6 @@ const noticeData = [
     {
         id: 2,
         title: 'Lorem ipsum dolor sit amet',
-        file_type: '',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
         fullDetails: noticePdf,
@@ -26,7 +25,6 @@ const noticeData = [
     },
     {
         id: 3,
-        file_type: '',
         title: 'Lorem ipsum dolor sit amet',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
@@ -37,7 +35,6 @@ const noticeData = [
     },
     {
         id: 4,
-        file_type: '',
         title: 'Lorem ipsum dolor sit amet',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
@@ -48,7 +45,6 @@ const noticeData = [
     },
     {
         id: 5,
-        file_type: '',
         title: 'Lorem ipsum dolor sit amet',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',
@@ -59,7 +55,6 @@ const noticeData = [
     },
     {
         id: 6,
-        file_type: '',
         title: 'Lorem ipsum dolor sit amet',
         noticeDetails:
             'অত্র বিশ্ববিদ্যালয়ের সংশ্লিষ্ট সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও ছাত্র-ছাত্রীদের অবগতির জন্য জানানো যাচ্ছে যে আগামী ২৫/০৯/২০২২ ইং তারিখ হতে পরবর্তী নির্দেশ না দেয়া পর্যন্ত ...',

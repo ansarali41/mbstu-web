@@ -1,23 +1,23 @@
 import React from 'react';
 // import Button from '@mui/material/Button';
-import { makeStyles } from '@material-ui/core';
-import { Nav, Navbar } from 'react-bootstrap';
+import {makeStyles} from '@material-ui/core';
+import {Nav, Navbar} from 'react-bootstrap';
 
 // import './styles.css';
 //---------------------------------------------------------------------
 // Common helpers and constants imports
 //---------------------------------------------------------------------
-import { setClassNameInDefns } from '../../../Helper/definitionHelper';
-import { Link } from 'react-router-dom';
+import {setClassNameInDefns} from '../../../Helper/definitionHelper';
+import {Link} from 'react-router-dom';
 //---------------------------------------------------------------------
 // CSS
 //---------------------------------------------------------------------
 const useStyles = (params = {}) => {
     return makeStyles(theme => ({
-        root: { position: 'fixed', zIndex: 5, width: '100%' },
-        marqueeContainer: { display: 'flex', alignItems: 'center', background: 'black' },
-        navbarContainer: { padding: '0px 20px', background: '#0a1c2e !important' },
-        link: { textDecoration: 'none', color: 'inherit' },
+        root: {position: 'fixed', zIndex: 5, width: '100%'},
+        marqueeContainer: {display: 'flex', alignItems: 'center', background: 'black'},
+        navbarContainer: {padding: '0px 20px', background: '#0a1c2e !important'},
+        link: {textDecoration: 'none', color: 'inherit'},
         mbstuLogo: {
             width: '70px',
             padding: '5px',
@@ -40,11 +40,11 @@ const useStyles = (params = {}) => {
 // Get definitions
 //---------------------------------------------------------------------
 const getDefns = params => {
-    const { classes } = params;
+    const {classes} = params;
 
     const defns = {
-        pageContainer: { container: true, direction: 'column' },
-        pageHeader: { item: true, lg: 12, md: 12, sm: 12, xs: 12 },
+        pageContainer: {container: true, direction: 'column'},
+        pageHeader: {item: true, lg: 12, md: 12, sm: 12, xs: 12},
     };
 
     // Automatically inject className for matching keys
@@ -55,29 +55,31 @@ const getDefns = params => {
 
 const Header = () => {
     const classes = useStyles({})();
-    const defns = getDefns({ classes });
+    const defns = getDefns({classes});
     return (
         <div {...defns.root}>
             <div {...defns.marqueeContainer}>
                 {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
-                <marquee width="90%" direction="left" style={{ background: '#E6E7E8' }}>
-                    মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের নব-নিযুক্ত মাননীয় ভাইস-চ্যান্সেলর অধ্যাপক ড. মোঃ ফরহাদ হোসেন কে শুভেচ্ছা ও অভিনন্দন।
+                <marquee width="90%" direction="left" style={{background: '#E6E7E8'}}>
+                    মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের নব-নিযুক্ত মাননীয় ভাইস-চ্যান্সেলর অধ্যাপক ড. মোঃ
+                    ফরহাদ হোসেন কে শুভেচ্ছা ও অভিনন্দন।
                 </marquee>
                 <span className="text-warning px-4">Highlight</span>
             </div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" {...defns.navbarContainer}>
                 <Navbar.Brand {...defns.navbarBrand}>
                     <Link to="/" {...defns.link}>
-                        <img className="img-fluid" {...defns.mbstuLogo} src="https://i.ibb.co/s5XmR5J/mbstu-logo.png" alt="" />
+                        <img className="img-fluid" {...defns.mbstuLogo} src="https://i.ibb.co/s5XmR5J/mbstu-logo.png"
+                             alt=""/>
                     </Link>
 
                     <div>
                         <p {...defns.universityName}>
-                            MAWLANA BHASHANI SCIENCE <br /> AND TECHNOLOGY UNIVERSITY
+                            MAWLANA BHASHANI SCIENCE <br/> AND TECHNOLOGY UNIVERSITY
                         </p>
                     </div>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link>
@@ -120,13 +122,11 @@ const Header = () => {
                                 News
                             </Link>
                         </Nav.Link>
-                        {/* <NavDropdown title="Departments" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">CSE</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">ICT</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Textile Engineering</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">About</NavDropdown.Item>
-                        </NavDropdown> */}
+                        <Nav.Link>
+                            <Link to="/admin/login" {...defns.link}>
+                                Dashboard
+                            </Link>
+                        </Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="https://mbstu.ac.bd/admissionresult.html" target="_blank">
